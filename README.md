@@ -47,7 +47,7 @@ This project aims to detect malaria in blood cell images using deep learning tec
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/IgnaCodeIA/Malaria-Detector-Training
    cd malaria-detector-training
    ```
 
