@@ -1,52 +1,41 @@
-# Malaria Detection Project
+# Malaria Detection Model Training
 
-This project aims to detect malaria in blood cell images using deep learning techniques. The repository is structured into three main parts: data preprocessing, model training, and serving the trained model.
+This project aims to detect malaria in blood cell images using deep learning techniques. The repository is focused on training the model, including data preprocessing, model training, and evaluation.
 
 ## Project Structure
 
 ```
-├── frontend_models/
-│   ├── src/
-│   ├── static/
-│   ├── templates/
-│   └── tests/
-├── serving_project/
-│   ├── logs/
-│   ├── model/
-│   ├── src/
-│   └── tests/
-└── training_models/
-    ├── data/
-    │   ├── Test/
-    │   │   ├── Parasitized/
-    │   │   └── Uninfected/
-    │   ├── Train/
-    │   │   ├── Parasitized/
-    │   │   └── Uninfected/
-    │   └── val/
-    │       ├── Parasitized/
-    │       └── Uninfected/
-    ├── mlruns/
-    ├── models/
-    ├── notebooks/
-    ├── src/
-    │   ├── __init__.py
-    │   ├── data_preprocessing.py
-    │   ├── model.py
-    │   ├── train.py
-    │   └── utils.py
-    └── tests/
+├── README.md
+├── data
+│   ├── Test
+│   │   ├── Parasitized
+│   │   └── Uninfected
+│   ├── Train
+│   │   ├── Parasitized
+│   │   └── Uninfected
+│   └── val
+│       ├── Parasitized
+│       └── Uninfected
+├── mlruns
+├── models
+├── notebooks
+├── requirements.txt
+├── src
+│   ├── __init__.py
+│   ├── data_preprocessing.py
+│   ├── model.py
+│   ├── train.py
+│   └── utils.py
+└── tests
 ```
 
-- `frontend_models/`: Contains the code for the frontend interface.
-- `serving_project/`: Handles model serving and deployment.
-- `training_models/`: Includes code for data preprocessing, model training, and evaluation.
-  - `data/`: Contains the dataset, divided into training, validation, and test sets.
-  - `src/`: Holds the Python scripts for data preprocessing, model definition, and training.
-  - `models/`: Directory to store trained models.
-  - `notebooks/`: Jupyter notebooks for exploratory data analysis (EDA) and testing.
-  - `mlruns/`: Stores experiment tracking information.
-  - `tests/`: Unit tests for the project.
+- `data/`: Contains the dataset, divided into training, validation, and test sets.
+- `mlruns/`: Stores experiment tracking information.
+- `models/`: Directory to store trained models.
+- `notebooks/`: Jupyter notebooks for exploratory data analysis (EDA) and testing.
+- `src/`: Holds the Python scripts for data preprocessing, model definition, and training.
+- `tests/`: Unit tests for the project.
+- `requirements.txt`: Python dependencies for the project.
 
 ## Prerequisites
 
@@ -59,7 +48,7 @@ This project aims to detect malaria in blood cell images using deep learning tec
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd malaria-detector
+   cd malaria-detector-training
    ```
 
 2. **Install dependencies:** Use the provided `requirements.txt` to install the Python dependencies.
@@ -94,12 +83,12 @@ The `dvc.yaml` file contains the stages for training, including dependencies and
 
 1. **Build the Docker image:**
    ```bash
-   docker build -t malaria-detector .
+   docker build -t malaria-detector-training .
    ```
 
 2. **Run the container:**
    ```bash
-   docker run -it --rm -v $(pwd)/models:/app/models -v $(pwd)/logs:/app/logs -p 6006:6006 malaria-detector
+   docker run -it --rm -v $(pwd)/models:/app/models -v $(pwd)/logs:/app/logs -p 6006:6006 malaria-detector-training
    ```
 
    This command will mount the local `models` and `logs` directories to the container, and expose port 6006 for TensorBoard.
