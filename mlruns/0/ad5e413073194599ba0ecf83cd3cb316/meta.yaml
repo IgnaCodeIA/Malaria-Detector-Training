@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/ignaciocarrenoromero/PROYECTOS%20PERSONALES/MALARIA-DETECTOR/training_models/mlruns/0/ad5e413073194599ba0ecf83cd3cb316/artifacts
+deleted_time: 1725129769242
+end_time: 1725129726952
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: ad5e413073194599ba0ecf83cd3cb316
+run_name: unruly-hog-763
+run_uuid: ad5e413073194599ba0ecf83cd3cb316
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725129721863
+status: 3
+tags: []
+user_id: ignaciocarrenoromero

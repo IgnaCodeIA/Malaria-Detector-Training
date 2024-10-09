@@ -1,0 +1,19 @@
+.git
+.log
+.dvc# Ignorar archivos y directorios de control de versiones
+.git
+.dvc
+
+# Ignorar archivos de configuración y registros
+*.log
+
+# Ignorar directorios de datos y modelos
+mlruns
+models
+
+# Ignorar archivos de caché y compilación
+__pycache__
+*.pyc
+
+# Ignorar archivos de configuración de entorno
+.env

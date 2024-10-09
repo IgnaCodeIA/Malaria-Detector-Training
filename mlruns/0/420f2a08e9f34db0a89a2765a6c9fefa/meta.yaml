@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ignaciocarrenoromero/PROYECTOS%20PERSONALES/MALARIA-DETECTOR/training_models/mlruns/0/420f2a08e9f34db0a89a2765a6c9fefa/artifacts
+end_time: 1725187634554
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 420f2a08e9f34db0a89a2765a6c9fefa
+run_name: awesome-deer-983
+run_uuid: 420f2a08e9f34db0a89a2765a6c9fefa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725187630194
+status: 3
+tags: []
+user_id: ignaciocarrenoromero

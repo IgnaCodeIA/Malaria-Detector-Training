@@ -1,0 +1,13 @@
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - src/model.py
+      - src/data_preprocessing.py
+      - data/Train/Parasitized
+      - data/Train/Uninfected
+      - data/val/Parasitized
+      - data/val/Uninfected
+    outs:
+      - models/trained_model.keras

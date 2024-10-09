@@ -1,0 +1,12 @@
+tensorflow==2.13.0
+numpy==1.24.3
+pandas==2.0.3
+opencv-python==4.8.0
+matplotlib==3.8.0
+Pillow==10.0.0
+scikit-learn==1.3.0
+PyYAML==6.0
+dvc==3.0.0
+dvc[s3]==3.0.0  # Optional: if using S3 remote storage for DVC
+jupyterlab==4.0.3
+tensorboard==2.13.0
